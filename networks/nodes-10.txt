@@ -1,0 +1,12 @@
+# This file is part of the NetBuilder example
+# id     name      type
+ 0       rte0      node.Node
+ 1       rte1      node.Node
+ 2       rte2      node.Node
+ 3       rte3      node.Node
+ 4       rte4      node.Node
+ 5       rte5      node.Node
+ 6       rte6      node.Node
+ 7       rte7      node.Node
+ 8       rte8      node.Node
+ 9       rte9      node.Node

@@ -1,0 +1,1780 @@
+version 3
+run vnet-0-20230901-10:35:15-13463
+attr configname vnet
+attr datetime 20230901-10:35:15
+attr datetimef 20230901-103515
+attr experiment vnet
+attr inifile omnetpp-10.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network networks.Net
+attr processid 13463
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config cmdenv-redirect-output true
+config **.appType "\"AppV\""
+config network networks.Net
+config **.address "int(replace(fullName(), \"rte\", \"\"))"
+config **.app.sendIaTime "exponential(47.61 ms)"
+config **.app.packageLength "100 bytes"
+config **.app.voteLength "5 bytes"
+config **.app.batchSize 10
+config **.nodesFile "\"networks/nodes-10.txt\""
+config **.connectionsFile "\"networks/connections-10.txt\""
+config **.app.quorum 7
+config **.app.N 10
+config **.destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+config **.router "\"\""
+config sim-time-limit 1000s
+config repeat 1
+
+par Net.rte0.port$o[0].channel typename "\"ned.DatarateChannel\""
+par Net.rte0.port$o[0].channel disabled false
+attr mutable ""
+par Net.rte0.port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte0.port$o[0].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte0.port$o[0].channel ber 0
+attr mutable ""
+par Net.rte0.port$o[0].channel per 0
+attr mutable ""
+par Net.rte1.port$o[0].channel typename "\"ned.DatarateChannel\""
+par Net.rte1.port$o[0].channel disabled false
+attr mutable ""
+par Net.rte1.port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte1.port$o[0].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte1.port$o[0].channel ber 0
+attr mutable ""
+par Net.rte1.port$o[0].channel per 0
+attr mutable ""
+par Net.rte0.port$o[1].channel typename "\"ned.DatarateChannel\""
+par Net.rte0.port$o[1].channel disabled false
+attr mutable ""
+par Net.rte0.port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte0.port$o[1].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte0.port$o[1].channel ber 0
+attr mutable ""
+par Net.rte0.port$o[1].channel per 0
+attr mutable ""
+par Net.rte2.port$o[0].channel typename "\"ned.DatarateChannel\""
+par Net.rte2.port$o[0].channel disabled false
+attr mutable ""
+par Net.rte2.port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte2.port$o[0].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte2.port$o[0].channel ber 0
+attr mutable ""
+par Net.rte2.port$o[0].channel per 0
+attr mutable ""
+par Net.rte0.port$o[2].channel typename "\"ned.DatarateChannel\""
+par Net.rte0.port$o[2].channel disabled false
+attr mutable ""
+par Net.rte0.port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte0.port$o[2].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte0.port$o[2].channel ber 0
+attr mutable ""
+par Net.rte0.port$o[2].channel per 0
+attr mutable ""
+par Net.rte3.port$o[0].channel typename "\"ned.DatarateChannel\""
+par Net.rte3.port$o[0].channel disabled false
+attr mutable ""
+par Net.rte3.port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte3.port$o[0].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte3.port$o[0].channel ber 0
+attr mutable ""
+par Net.rte3.port$o[0].channel per 0
+attr mutable ""
+par Net.rte0.port$o[3].channel typename "\"ned.DatarateChannel\""
+par Net.rte0.port$o[3].channel disabled false
+attr mutable ""
+par Net.rte0.port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte0.port$o[3].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte0.port$o[3].channel ber 0
+attr mutable ""
+par Net.rte0.port$o[3].channel per 0
+attr mutable ""
+par Net.rte4.port$o[0].channel typename "\"ned.DatarateChannel\""
+par Net.rte4.port$o[0].channel disabled false
+attr mutable ""
+par Net.rte4.port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte4.port$o[0].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte4.port$o[0].channel ber 0
+attr mutable ""
+par Net.rte4.port$o[0].channel per 0
+attr mutable ""
+par Net.rte0.port$o[4].channel typename "\"ned.DatarateChannel\""
+par Net.rte0.port$o[4].channel disabled false
+attr mutable ""
+par Net.rte0.port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte0.port$o[4].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte0.port$o[4].channel ber 0
+attr mutable ""
+par Net.rte0.port$o[4].channel per 0
+attr mutable ""
+par Net.rte5.port$o[0].channel typename "\"ned.DatarateChannel\""
+par Net.rte5.port$o[0].channel disabled false
+attr mutable ""
+par Net.rte5.port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte5.port$o[0].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte5.port$o[0].channel ber 0
+attr mutable ""
+par Net.rte5.port$o[0].channel per 0
+attr mutable ""
+par Net.rte0.port$o[5].channel typename "\"ned.DatarateChannel\""
+par Net.rte0.port$o[5].channel disabled false
+attr mutable ""
+par Net.rte0.port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte0.port$o[5].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte0.port$o[5].channel ber 0
+attr mutable ""
+par Net.rte0.port$o[5].channel per 0
+attr mutable ""
+par Net.rte6.port$o[0].channel typename "\"ned.DatarateChannel\""
+par Net.rte6.port$o[0].channel disabled false
+attr mutable ""
+par Net.rte6.port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte6.port$o[0].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte6.port$o[0].channel ber 0
+attr mutable ""
+par Net.rte6.port$o[0].channel per 0
+attr mutable ""
+par Net.rte0.port$o[6].channel typename "\"ned.DatarateChannel\""
+par Net.rte0.port$o[6].channel disabled false
+attr mutable ""
+par Net.rte0.port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte0.port$o[6].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte0.port$o[6].channel ber 0
+attr mutable ""
+par Net.rte0.port$o[6].channel per 0
+attr mutable ""
+par Net.rte7.port$o[0].channel typename "\"ned.DatarateChannel\""
+par Net.rte7.port$o[0].channel disabled false
+attr mutable ""
+par Net.rte7.port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte7.port$o[0].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte7.port$o[0].channel ber 0
+attr mutable ""
+par Net.rte7.port$o[0].channel per 0
+attr mutable ""
+par Net.rte0.port$o[7].channel typename "\"ned.DatarateChannel\""
+par Net.rte0.port$o[7].channel disabled false
+attr mutable ""
+par Net.rte0.port$o[7].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte0.port$o[7].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte0.port$o[7].channel ber 0
+attr mutable ""
+par Net.rte0.port$o[7].channel per 0
+attr mutable ""
+par Net.rte8.port$o[0].channel typename "\"ned.DatarateChannel\""
+par Net.rte8.port$o[0].channel disabled false
+attr mutable ""
+par Net.rte8.port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte8.port$o[0].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte8.port$o[0].channel ber 0
+attr mutable ""
+par Net.rte8.port$o[0].channel per 0
+attr mutable ""
+par Net.rte0.port$o[8].channel typename "\"ned.DatarateChannel\""
+par Net.rte0.port$o[8].channel disabled false
+attr mutable ""
+par Net.rte0.port$o[8].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte0.port$o[8].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte0.port$o[8].channel ber 0
+attr mutable ""
+par Net.rte0.port$o[8].channel per 0
+attr mutable ""
+par Net.rte9.port$o[0].channel typename "\"ned.DatarateChannel\""
+par Net.rte9.port$o[0].channel disabled false
+attr mutable ""
+par Net.rte9.port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte9.port$o[0].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte9.port$o[0].channel ber 0
+attr mutable ""
+par Net.rte9.port$o[0].channel per 0
+attr mutable ""
+par Net.rte1.port$o[1].channel typename "\"ned.DatarateChannel\""
+par Net.rte1.port$o[1].channel disabled false
+attr mutable ""
+par Net.rte1.port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte1.port$o[1].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte1.port$o[1].channel ber 0
+attr mutable ""
+par Net.rte1.port$o[1].channel per 0
+attr mutable ""
+par Net.rte2.port$o[1].channel typename "\"ned.DatarateChannel\""
+par Net.rte2.port$o[1].channel disabled false
+attr mutable ""
+par Net.rte2.port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte2.port$o[1].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte2.port$o[1].channel ber 0
+attr mutable ""
+par Net.rte2.port$o[1].channel per 0
+attr mutable ""
+par Net.rte1.port$o[2].channel typename "\"ned.DatarateChannel\""
+par Net.rte1.port$o[2].channel disabled false
+attr mutable ""
+par Net.rte1.port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte1.port$o[2].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte1.port$o[2].channel ber 0
+attr mutable ""
+par Net.rte1.port$o[2].channel per 0
+attr mutable ""
+par Net.rte3.port$o[1].channel typename "\"ned.DatarateChannel\""
+par Net.rte3.port$o[1].channel disabled false
+attr mutable ""
+par Net.rte3.port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte3.port$o[1].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte3.port$o[1].channel ber 0
+attr mutable ""
+par Net.rte3.port$o[1].channel per 0
+attr mutable ""
+par Net.rte1.port$o[3].channel typename "\"ned.DatarateChannel\""
+par Net.rte1.port$o[3].channel disabled false
+attr mutable ""
+par Net.rte1.port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte1.port$o[3].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte1.port$o[3].channel ber 0
+attr mutable ""
+par Net.rte1.port$o[3].channel per 0
+attr mutable ""
+par Net.rte4.port$o[1].channel typename "\"ned.DatarateChannel\""
+par Net.rte4.port$o[1].channel disabled false
+attr mutable ""
+par Net.rte4.port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte4.port$o[1].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte4.port$o[1].channel ber 0
+attr mutable ""
+par Net.rte4.port$o[1].channel per 0
+attr mutable ""
+par Net.rte1.port$o[4].channel typename "\"ned.DatarateChannel\""
+par Net.rte1.port$o[4].channel disabled false
+attr mutable ""
+par Net.rte1.port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte1.port$o[4].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte1.port$o[4].channel ber 0
+attr mutable ""
+par Net.rte1.port$o[4].channel per 0
+attr mutable ""
+par Net.rte5.port$o[1].channel typename "\"ned.DatarateChannel\""
+par Net.rte5.port$o[1].channel disabled false
+attr mutable ""
+par Net.rte5.port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte5.port$o[1].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte5.port$o[1].channel ber 0
+attr mutable ""
+par Net.rte5.port$o[1].channel per 0
+attr mutable ""
+par Net.rte1.port$o[5].channel typename "\"ned.DatarateChannel\""
+par Net.rte1.port$o[5].channel disabled false
+attr mutable ""
+par Net.rte1.port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte1.port$o[5].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte1.port$o[5].channel ber 0
+attr mutable ""
+par Net.rte1.port$o[5].channel per 0
+attr mutable ""
+par Net.rte6.port$o[1].channel typename "\"ned.DatarateChannel\""
+par Net.rte6.port$o[1].channel disabled false
+attr mutable ""
+par Net.rte6.port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte6.port$o[1].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte6.port$o[1].channel ber 0
+attr mutable ""
+par Net.rte6.port$o[1].channel per 0
+attr mutable ""
+par Net.rte1.port$o[6].channel typename "\"ned.DatarateChannel\""
+par Net.rte1.port$o[6].channel disabled false
+attr mutable ""
+par Net.rte1.port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte1.port$o[6].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte1.port$o[6].channel ber 0
+attr mutable ""
+par Net.rte1.port$o[6].channel per 0
+attr mutable ""
+par Net.rte7.port$o[1].channel typename "\"ned.DatarateChannel\""
+par Net.rte7.port$o[1].channel disabled false
+attr mutable ""
+par Net.rte7.port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte7.port$o[1].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte7.port$o[1].channel ber 0
+attr mutable ""
+par Net.rte7.port$o[1].channel per 0
+attr mutable ""
+par Net.rte1.port$o[7].channel typename "\"ned.DatarateChannel\""
+par Net.rte1.port$o[7].channel disabled false
+attr mutable ""
+par Net.rte1.port$o[7].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte1.port$o[7].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte1.port$o[7].channel ber 0
+attr mutable ""
+par Net.rte1.port$o[7].channel per 0
+attr mutable ""
+par Net.rte8.port$o[1].channel typename "\"ned.DatarateChannel\""
+par Net.rte8.port$o[1].channel disabled false
+attr mutable ""
+par Net.rte8.port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte8.port$o[1].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte8.port$o[1].channel ber 0
+attr mutable ""
+par Net.rte8.port$o[1].channel per 0
+attr mutable ""
+par Net.rte1.port$o[8].channel typename "\"ned.DatarateChannel\""
+par Net.rte1.port$o[8].channel disabled false
+attr mutable ""
+par Net.rte1.port$o[8].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte1.port$o[8].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte1.port$o[8].channel ber 0
+attr mutable ""
+par Net.rte1.port$o[8].channel per 0
+attr mutable ""
+par Net.rte9.port$o[1].channel typename "\"ned.DatarateChannel\""
+par Net.rte9.port$o[1].channel disabled false
+attr mutable ""
+par Net.rte9.port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte9.port$o[1].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte9.port$o[1].channel ber 0
+attr mutable ""
+par Net.rte9.port$o[1].channel per 0
+attr mutable ""
+par Net.rte2.port$o[2].channel typename "\"ned.DatarateChannel\""
+par Net.rte2.port$o[2].channel disabled false
+attr mutable ""
+par Net.rte2.port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte2.port$o[2].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte2.port$o[2].channel ber 0
+attr mutable ""
+par Net.rte2.port$o[2].channel per 0
+attr mutable ""
+par Net.rte3.port$o[2].channel typename "\"ned.DatarateChannel\""
+par Net.rte3.port$o[2].channel disabled false
+attr mutable ""
+par Net.rte3.port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte3.port$o[2].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte3.port$o[2].channel ber 0
+attr mutable ""
+par Net.rte3.port$o[2].channel per 0
+attr mutable ""
+par Net.rte2.port$o[3].channel typename "\"ned.DatarateChannel\""
+par Net.rte2.port$o[3].channel disabled false
+attr mutable ""
+par Net.rte2.port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte2.port$o[3].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte2.port$o[3].channel ber 0
+attr mutable ""
+par Net.rte2.port$o[3].channel per 0
+attr mutable ""
+par Net.rte4.port$o[2].channel typename "\"ned.DatarateChannel\""
+par Net.rte4.port$o[2].channel disabled false
+attr mutable ""
+par Net.rte4.port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte4.port$o[2].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte4.port$o[2].channel ber 0
+attr mutable ""
+par Net.rte4.port$o[2].channel per 0
+attr mutable ""
+par Net.rte2.port$o[4].channel typename "\"ned.DatarateChannel\""
+par Net.rte2.port$o[4].channel disabled false
+attr mutable ""
+par Net.rte2.port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte2.port$o[4].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte2.port$o[4].channel ber 0
+attr mutable ""
+par Net.rte2.port$o[4].channel per 0
+attr mutable ""
+par Net.rte5.port$o[2].channel typename "\"ned.DatarateChannel\""
+par Net.rte5.port$o[2].channel disabled false
+attr mutable ""
+par Net.rte5.port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte5.port$o[2].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte5.port$o[2].channel ber 0
+attr mutable ""
+par Net.rte5.port$o[2].channel per 0
+attr mutable ""
+par Net.rte2.port$o[5].channel typename "\"ned.DatarateChannel\""
+par Net.rte2.port$o[5].channel disabled false
+attr mutable ""
+par Net.rte2.port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte2.port$o[5].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte2.port$o[5].channel ber 0
+attr mutable ""
+par Net.rte2.port$o[5].channel per 0
+attr mutable ""
+par Net.rte6.port$o[2].channel typename "\"ned.DatarateChannel\""
+par Net.rte6.port$o[2].channel disabled false
+attr mutable ""
+par Net.rte6.port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte6.port$o[2].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte6.port$o[2].channel ber 0
+attr mutable ""
+par Net.rte6.port$o[2].channel per 0
+attr mutable ""
+par Net.rte2.port$o[6].channel typename "\"ned.DatarateChannel\""
+par Net.rte2.port$o[6].channel disabled false
+attr mutable ""
+par Net.rte2.port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte2.port$o[6].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte2.port$o[6].channel ber 0
+attr mutable ""
+par Net.rte2.port$o[6].channel per 0
+attr mutable ""
+par Net.rte7.port$o[2].channel typename "\"ned.DatarateChannel\""
+par Net.rte7.port$o[2].channel disabled false
+attr mutable ""
+par Net.rte7.port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte7.port$o[2].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte7.port$o[2].channel ber 0
+attr mutable ""
+par Net.rte7.port$o[2].channel per 0
+attr mutable ""
+par Net.rte2.port$o[7].channel typename "\"ned.DatarateChannel\""
+par Net.rte2.port$o[7].channel disabled false
+attr mutable ""
+par Net.rte2.port$o[7].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte2.port$o[7].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte2.port$o[7].channel ber 0
+attr mutable ""
+par Net.rte2.port$o[7].channel per 0
+attr mutable ""
+par Net.rte8.port$o[2].channel typename "\"ned.DatarateChannel\""
+par Net.rte8.port$o[2].channel disabled false
+attr mutable ""
+par Net.rte8.port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte8.port$o[2].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte8.port$o[2].channel ber 0
+attr mutable ""
+par Net.rte8.port$o[2].channel per 0
+attr mutable ""
+par Net.rte2.port$o[8].channel typename "\"ned.DatarateChannel\""
+par Net.rte2.port$o[8].channel disabled false
+attr mutable ""
+par Net.rte2.port$o[8].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte2.port$o[8].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte2.port$o[8].channel ber 0
+attr mutable ""
+par Net.rte2.port$o[8].channel per 0
+attr mutable ""
+par Net.rte9.port$o[2].channel typename "\"ned.DatarateChannel\""
+par Net.rte9.port$o[2].channel disabled false
+attr mutable ""
+par Net.rte9.port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte9.port$o[2].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte9.port$o[2].channel ber 0
+attr mutable ""
+par Net.rte9.port$o[2].channel per 0
+attr mutable ""
+par Net.rte3.port$o[3].channel typename "\"ned.DatarateChannel\""
+par Net.rte3.port$o[3].channel disabled false
+attr mutable ""
+par Net.rte3.port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte3.port$o[3].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte3.port$o[3].channel ber 0
+attr mutable ""
+par Net.rte3.port$o[3].channel per 0
+attr mutable ""
+par Net.rte4.port$o[3].channel typename "\"ned.DatarateChannel\""
+par Net.rte4.port$o[3].channel disabled false
+attr mutable ""
+par Net.rte4.port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte4.port$o[3].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte4.port$o[3].channel ber 0
+attr mutable ""
+par Net.rte4.port$o[3].channel per 0
+attr mutable ""
+par Net.rte3.port$o[4].channel typename "\"ned.DatarateChannel\""
+par Net.rte3.port$o[4].channel disabled false
+attr mutable ""
+par Net.rte3.port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte3.port$o[4].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte3.port$o[4].channel ber 0
+attr mutable ""
+par Net.rte3.port$o[4].channel per 0
+attr mutable ""
+par Net.rte5.port$o[3].channel typename "\"ned.DatarateChannel\""
+par Net.rte5.port$o[3].channel disabled false
+attr mutable ""
+par Net.rte5.port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte5.port$o[3].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte5.port$o[3].channel ber 0
+attr mutable ""
+par Net.rte5.port$o[3].channel per 0
+attr mutable ""
+par Net.rte3.port$o[5].channel typename "\"ned.DatarateChannel\""
+par Net.rte3.port$o[5].channel disabled false
+attr mutable ""
+par Net.rte3.port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte3.port$o[5].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte3.port$o[5].channel ber 0
+attr mutable ""
+par Net.rte3.port$o[5].channel per 0
+attr mutable ""
+par Net.rte6.port$o[3].channel typename "\"ned.DatarateChannel\""
+par Net.rte6.port$o[3].channel disabled false
+attr mutable ""
+par Net.rte6.port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte6.port$o[3].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte6.port$o[3].channel ber 0
+attr mutable ""
+par Net.rte6.port$o[3].channel per 0
+attr mutable ""
+par Net.rte3.port$o[6].channel typename "\"ned.DatarateChannel\""
+par Net.rte3.port$o[6].channel disabled false
+attr mutable ""
+par Net.rte3.port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte3.port$o[6].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte3.port$o[6].channel ber 0
+attr mutable ""
+par Net.rte3.port$o[6].channel per 0
+attr mutable ""
+par Net.rte7.port$o[3].channel typename "\"ned.DatarateChannel\""
+par Net.rte7.port$o[3].channel disabled false
+attr mutable ""
+par Net.rte7.port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte7.port$o[3].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte7.port$o[3].channel ber 0
+attr mutable ""
+par Net.rte7.port$o[3].channel per 0
+attr mutable ""
+par Net.rte3.port$o[7].channel typename "\"ned.DatarateChannel\""
+par Net.rte3.port$o[7].channel disabled false
+attr mutable ""
+par Net.rte3.port$o[7].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte3.port$o[7].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte3.port$o[7].channel ber 0
+attr mutable ""
+par Net.rte3.port$o[7].channel per 0
+attr mutable ""
+par Net.rte8.port$o[3].channel typename "\"ned.DatarateChannel\""
+par Net.rte8.port$o[3].channel disabled false
+attr mutable ""
+par Net.rte8.port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte8.port$o[3].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte8.port$o[3].channel ber 0
+attr mutable ""
+par Net.rte8.port$o[3].channel per 0
+attr mutable ""
+par Net.rte3.port$o[8].channel typename "\"ned.DatarateChannel\""
+par Net.rte3.port$o[8].channel disabled false
+attr mutable ""
+par Net.rte3.port$o[8].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte3.port$o[8].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte3.port$o[8].channel ber 0
+attr mutable ""
+par Net.rte3.port$o[8].channel per 0
+attr mutable ""
+par Net.rte9.port$o[3].channel typename "\"ned.DatarateChannel\""
+par Net.rte9.port$o[3].channel disabled false
+attr mutable ""
+par Net.rte9.port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte9.port$o[3].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte9.port$o[3].channel ber 0
+attr mutable ""
+par Net.rte9.port$o[3].channel per 0
+attr mutable ""
+par Net.rte4.port$o[4].channel typename "\"ned.DatarateChannel\""
+par Net.rte4.port$o[4].channel disabled false
+attr mutable ""
+par Net.rte4.port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte4.port$o[4].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte4.port$o[4].channel ber 0
+attr mutable ""
+par Net.rte4.port$o[4].channel per 0
+attr mutable ""
+par Net.rte5.port$o[4].channel typename "\"ned.DatarateChannel\""
+par Net.rte5.port$o[4].channel disabled false
+attr mutable ""
+par Net.rte5.port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte5.port$o[4].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte5.port$o[4].channel ber 0
+attr mutable ""
+par Net.rte5.port$o[4].channel per 0
+attr mutable ""
+par Net.rte4.port$o[5].channel typename "\"ned.DatarateChannel\""
+par Net.rte4.port$o[5].channel disabled false
+attr mutable ""
+par Net.rte4.port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte4.port$o[5].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte4.port$o[5].channel ber 0
+attr mutable ""
+par Net.rte4.port$o[5].channel per 0
+attr mutable ""
+par Net.rte6.port$o[4].channel typename "\"ned.DatarateChannel\""
+par Net.rte6.port$o[4].channel disabled false
+attr mutable ""
+par Net.rte6.port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte6.port$o[4].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte6.port$o[4].channel ber 0
+attr mutable ""
+par Net.rte6.port$o[4].channel per 0
+attr mutable ""
+par Net.rte4.port$o[6].channel typename "\"ned.DatarateChannel\""
+par Net.rte4.port$o[6].channel disabled false
+attr mutable ""
+par Net.rte4.port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte4.port$o[6].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte4.port$o[6].channel ber 0
+attr mutable ""
+par Net.rte4.port$o[6].channel per 0
+attr mutable ""
+par Net.rte7.port$o[4].channel typename "\"ned.DatarateChannel\""
+par Net.rte7.port$o[4].channel disabled false
+attr mutable ""
+par Net.rte7.port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte7.port$o[4].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte7.port$o[4].channel ber 0
+attr mutable ""
+par Net.rte7.port$o[4].channel per 0
+attr mutable ""
+par Net.rte4.port$o[7].channel typename "\"ned.DatarateChannel\""
+par Net.rte4.port$o[7].channel disabled false
+attr mutable ""
+par Net.rte4.port$o[7].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte4.port$o[7].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte4.port$o[7].channel ber 0
+attr mutable ""
+par Net.rte4.port$o[7].channel per 0
+attr mutable ""
+par Net.rte8.port$o[4].channel typename "\"ned.DatarateChannel\""
+par Net.rte8.port$o[4].channel disabled false
+attr mutable ""
+par Net.rte8.port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte8.port$o[4].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte8.port$o[4].channel ber 0
+attr mutable ""
+par Net.rte8.port$o[4].channel per 0
+attr mutable ""
+par Net.rte4.port$o[8].channel typename "\"ned.DatarateChannel\""
+par Net.rte4.port$o[8].channel disabled false
+attr mutable ""
+par Net.rte4.port$o[8].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte4.port$o[8].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte4.port$o[8].channel ber 0
+attr mutable ""
+par Net.rte4.port$o[8].channel per 0
+attr mutable ""
+par Net.rte9.port$o[4].channel typename "\"ned.DatarateChannel\""
+par Net.rte9.port$o[4].channel disabled false
+attr mutable ""
+par Net.rte9.port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte9.port$o[4].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte9.port$o[4].channel ber 0
+attr mutable ""
+par Net.rte9.port$o[4].channel per 0
+attr mutable ""
+par Net.rte5.port$o[5].channel typename "\"ned.DatarateChannel\""
+par Net.rte5.port$o[5].channel disabled false
+attr mutable ""
+par Net.rte5.port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte5.port$o[5].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte5.port$o[5].channel ber 0
+attr mutable ""
+par Net.rte5.port$o[5].channel per 0
+attr mutable ""
+par Net.rte6.port$o[5].channel typename "\"ned.DatarateChannel\""
+par Net.rte6.port$o[5].channel disabled false
+attr mutable ""
+par Net.rte6.port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte6.port$o[5].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte6.port$o[5].channel ber 0
+attr mutable ""
+par Net.rte6.port$o[5].channel per 0
+attr mutable ""
+par Net.rte5.port$o[6].channel typename "\"ned.DatarateChannel\""
+par Net.rte5.port$o[6].channel disabled false
+attr mutable ""
+par Net.rte5.port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte5.port$o[6].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte5.port$o[6].channel ber 0
+attr mutable ""
+par Net.rte5.port$o[6].channel per 0
+attr mutable ""
+par Net.rte7.port$o[5].channel typename "\"ned.DatarateChannel\""
+par Net.rte7.port$o[5].channel disabled false
+attr mutable ""
+par Net.rte7.port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte7.port$o[5].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte7.port$o[5].channel ber 0
+attr mutable ""
+par Net.rte7.port$o[5].channel per 0
+attr mutable ""
+par Net.rte5.port$o[7].channel typename "\"ned.DatarateChannel\""
+par Net.rte5.port$o[7].channel disabled false
+attr mutable ""
+par Net.rte5.port$o[7].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte5.port$o[7].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte5.port$o[7].channel ber 0
+attr mutable ""
+par Net.rte5.port$o[7].channel per 0
+attr mutable ""
+par Net.rte8.port$o[5].channel typename "\"ned.DatarateChannel\""
+par Net.rte8.port$o[5].channel disabled false
+attr mutable ""
+par Net.rte8.port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte8.port$o[5].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte8.port$o[5].channel ber 0
+attr mutable ""
+par Net.rte8.port$o[5].channel per 0
+attr mutable ""
+par Net.rte5.port$o[8].channel typename "\"ned.DatarateChannel\""
+par Net.rte5.port$o[8].channel disabled false
+attr mutable ""
+par Net.rte5.port$o[8].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte5.port$o[8].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte5.port$o[8].channel ber 0
+attr mutable ""
+par Net.rte5.port$o[8].channel per 0
+attr mutable ""
+par Net.rte9.port$o[5].channel typename "\"ned.DatarateChannel\""
+par Net.rte9.port$o[5].channel disabled false
+attr mutable ""
+par Net.rte9.port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte9.port$o[5].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte9.port$o[5].channel ber 0
+attr mutable ""
+par Net.rte9.port$o[5].channel per 0
+attr mutable ""
+par Net.rte6.port$o[6].channel typename "\"ned.DatarateChannel\""
+par Net.rte6.port$o[6].channel disabled false
+attr mutable ""
+par Net.rte6.port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte6.port$o[6].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte6.port$o[6].channel ber 0
+attr mutable ""
+par Net.rte6.port$o[6].channel per 0
+attr mutable ""
+par Net.rte7.port$o[6].channel typename "\"ned.DatarateChannel\""
+par Net.rte7.port$o[6].channel disabled false
+attr mutable ""
+par Net.rte7.port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte7.port$o[6].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte7.port$o[6].channel ber 0
+attr mutable ""
+par Net.rte7.port$o[6].channel per 0
+attr mutable ""
+par Net.rte6.port$o[7].channel typename "\"ned.DatarateChannel\""
+par Net.rte6.port$o[7].channel disabled false
+attr mutable ""
+par Net.rte6.port$o[7].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte6.port$o[7].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte6.port$o[7].channel ber 0
+attr mutable ""
+par Net.rte6.port$o[7].channel per 0
+attr mutable ""
+par Net.rte8.port$o[6].channel typename "\"ned.DatarateChannel\""
+par Net.rte8.port$o[6].channel disabled false
+attr mutable ""
+par Net.rte8.port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte8.port$o[6].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte8.port$o[6].channel ber 0
+attr mutable ""
+par Net.rte8.port$o[6].channel per 0
+attr mutable ""
+par Net.rte6.port$o[8].channel typename "\"ned.DatarateChannel\""
+par Net.rte6.port$o[8].channel disabled false
+attr mutable ""
+par Net.rte6.port$o[8].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte6.port$o[8].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte6.port$o[8].channel ber 0
+attr mutable ""
+par Net.rte6.port$o[8].channel per 0
+attr mutable ""
+par Net.rte9.port$o[6].channel typename "\"ned.DatarateChannel\""
+par Net.rte9.port$o[6].channel disabled false
+attr mutable ""
+par Net.rte9.port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte9.port$o[6].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte9.port$o[6].channel ber 0
+attr mutable ""
+par Net.rte9.port$o[6].channel per 0
+attr mutable ""
+par Net.rte7.port$o[7].channel typename "\"ned.DatarateChannel\""
+par Net.rte7.port$o[7].channel disabled false
+attr mutable ""
+par Net.rte7.port$o[7].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte7.port$o[7].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte7.port$o[7].channel ber 0
+attr mutable ""
+par Net.rte7.port$o[7].channel per 0
+attr mutable ""
+par Net.rte8.port$o[7].channel typename "\"ned.DatarateChannel\""
+par Net.rte8.port$o[7].channel disabled false
+attr mutable ""
+par Net.rte8.port$o[7].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte8.port$o[7].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte8.port$o[7].channel ber 0
+attr mutable ""
+par Net.rte8.port$o[7].channel per 0
+attr mutable ""
+par Net.rte7.port$o[8].channel typename "\"ned.DatarateChannel\""
+par Net.rte7.port$o[8].channel disabled false
+attr mutable ""
+par Net.rte7.port$o[8].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte7.port$o[8].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte7.port$o[8].channel ber 0
+attr mutable ""
+par Net.rte7.port$o[8].channel per 0
+attr mutable ""
+par Net.rte9.port$o[7].channel typename "\"ned.DatarateChannel\""
+par Net.rte9.port$o[7].channel disabled false
+attr mutable ""
+par Net.rte9.port$o[7].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte9.port$o[7].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte9.port$o[7].channel ber 0
+attr mutable ""
+par Net.rte9.port$o[7].channel per 0
+attr mutable ""
+par Net.rte8.port$o[8].channel typename "\"ned.DatarateChannel\""
+par Net.rte8.port$o[8].channel disabled false
+attr mutable ""
+par Net.rte8.port$o[8].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte8.port$o[8].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte8.port$o[8].channel ber 0
+attr mutable ""
+par Net.rte8.port$o[8].channel per 0
+attr mutable ""
+par Net.rte9.port$o[8].channel typename "\"ned.DatarateChannel\""
+par Net.rte9.port$o[8].channel disabled false
+attr mutable ""
+par Net.rte9.port$o[8].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Net.rte9.port$o[8].channel datarate 13333bps
+attr mutable ""
+attr unit bps
+par Net.rte9.port$o[8].channel ber 0
+attr mutable ""
+par Net.rte9.port$o[8].channel per 0
+attr mutable ""
+par Net.builder typename "\"networks.NetBuilder\""
+par Net.builder nodesFile "\"networks/nodes-10.txt\""
+par Net.builder connectionsFile "\"networks/connections-10.txt\""
+par Net.rte0.app typename "\"node.AppV\""
+par Net.rte0.app address 0
+par Net.rte0.app batchSize 10
+par Net.rte0.app quorum 7
+par Net.rte0.app N 10
+par Net.rte0.app destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+par Net.rte0.app router "\"\""
+par Net.rte0.app sendIaTime exponential(47.61ms)
+attr unit s
+par Net.rte0.app packageLength 100byte
+attr unit byte
+par Net.rte0.app voteLength 5byte
+attr unit byte
+scalar Net.rte0.app Txcount:sum 5560
+attr interpolationmode none
+attr recordingmode sum
+attr title "Txcount, sum"
+scalar Net.rte0.app TxQueueLen:mean 5278.6113886114
+attr interpolationmode none
+attr recordingmode mean
+attr title "TxQueueLen, mean"
+scalar Net.rte0.app endToEndDelay:mean 333.019935692
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived requests, mean"
+attr unit s
+par Net.rte0.routing typename "\"node.Routing\""
+par Net.rte0.queue[0] typename "\"node.L2Queue\""
+par Net.rte0.queue[0] frameCapacity 0
+par Net.rte0.queue[0] useCutThroughSwitching false
+par Net.rte0.queue[1] typename "\"node.L2Queue\""
+par Net.rte0.queue[1] frameCapacity 0
+par Net.rte0.queue[1] useCutThroughSwitching false
+par Net.rte0.queue[2] typename "\"node.L2Queue\""
+par Net.rte0.queue[2] frameCapacity 0
+par Net.rte0.queue[2] useCutThroughSwitching false
+par Net.rte0.queue[3] typename "\"node.L2Queue\""
+par Net.rte0.queue[3] frameCapacity 0
+par Net.rte0.queue[3] useCutThroughSwitching false
+par Net.rte0.queue[4] typename "\"node.L2Queue\""
+par Net.rte0.queue[4] frameCapacity 0
+par Net.rte0.queue[4] useCutThroughSwitching false
+par Net.rte0.queue[5] typename "\"node.L2Queue\""
+par Net.rte0.queue[5] frameCapacity 0
+par Net.rte0.queue[5] useCutThroughSwitching false
+par Net.rte0.queue[6] typename "\"node.L2Queue\""
+par Net.rte0.queue[6] frameCapacity 0
+par Net.rte0.queue[6] useCutThroughSwitching false
+par Net.rte0.queue[7] typename "\"node.L2Queue\""
+par Net.rte0.queue[7] frameCapacity 0
+par Net.rte0.queue[7] useCutThroughSwitching false
+par Net.rte0.queue[8] typename "\"node.L2Queue\""
+par Net.rte0.queue[8] frameCapacity 0
+par Net.rte0.queue[8] useCutThroughSwitching false
+par Net.rte0 typename "\"node.Node\""
+par Net.rte0 address 0
+par Net.rte0 appType "\"AppV\""
+par Net.rte1.app typename "\"node.AppV\""
+par Net.rte1.app address 1
+par Net.rte1.app batchSize 10
+par Net.rte1.app quorum 7
+par Net.rte1.app N 10
+par Net.rte1.app destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+par Net.rte1.app router "\"\""
+par Net.rte1.app sendIaTime exponential(47.61ms)
+attr unit s
+par Net.rte1.app packageLength 100byte
+attr unit byte
+par Net.rte1.app voteLength 5byte
+attr unit byte
+scalar Net.rte1.app Txcount:sum 5550
+attr interpolationmode none
+attr recordingmode sum
+attr title "Txcount, sum"
+scalar Net.rte1.app TxQueueLen:mean 5246.7621145374
+attr interpolationmode none
+attr recordingmode mean
+attr title "TxQueueLen, mean"
+scalar Net.rte1.app endToEndDelay:mean 330.39566985306
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived requests, mean"
+attr unit s
+par Net.rte1.routing typename "\"node.Routing\""
+par Net.rte1.queue[0] typename "\"node.L2Queue\""
+par Net.rte1.queue[0] frameCapacity 0
+par Net.rte1.queue[0] useCutThroughSwitching false
+par Net.rte1.queue[1] typename "\"node.L2Queue\""
+par Net.rte1.queue[1] frameCapacity 0
+par Net.rte1.queue[1] useCutThroughSwitching false
+par Net.rte1.queue[2] typename "\"node.L2Queue\""
+par Net.rte1.queue[2] frameCapacity 0
+par Net.rte1.queue[2] useCutThroughSwitching false
+par Net.rte1.queue[3] typename "\"node.L2Queue\""
+par Net.rte1.queue[3] frameCapacity 0
+par Net.rte1.queue[3] useCutThroughSwitching false
+par Net.rte1.queue[4] typename "\"node.L2Queue\""
+par Net.rte1.queue[4] frameCapacity 0
+par Net.rte1.queue[4] useCutThroughSwitching false
+par Net.rte1.queue[5] typename "\"node.L2Queue\""
+par Net.rte1.queue[5] frameCapacity 0
+par Net.rte1.queue[5] useCutThroughSwitching false
+par Net.rte1.queue[6] typename "\"node.L2Queue\""
+par Net.rte1.queue[6] frameCapacity 0
+par Net.rte1.queue[6] useCutThroughSwitching false
+par Net.rte1.queue[7] typename "\"node.L2Queue\""
+par Net.rte1.queue[7] frameCapacity 0
+par Net.rte1.queue[7] useCutThroughSwitching false
+par Net.rte1.queue[8] typename "\"node.L2Queue\""
+par Net.rte1.queue[8] frameCapacity 0
+par Net.rte1.queue[8] useCutThroughSwitching false
+par Net.rte1 typename "\"node.Node\""
+par Net.rte1 address 1
+par Net.rte1 appType "\"AppV\""
+par Net.rte2.app typename "\"node.AppV\""
+par Net.rte2.app address 2
+par Net.rte2.app batchSize 10
+par Net.rte2.app quorum 7
+par Net.rte2.app N 10
+par Net.rte2.app destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+par Net.rte2.app router "\"\""
+par Net.rte2.app sendIaTime exponential(47.61ms)
+attr unit s
+par Net.rte2.app packageLength 100byte
+attr unit byte
+par Net.rte2.app voteLength 5byte
+attr unit byte
+scalar Net.rte2.app Txcount:sum 5580
+attr interpolationmode none
+attr recordingmode sum
+attr title "Txcount, sum"
+scalar Net.rte2.app TxQueueLen:mean 5209.6736967768
+attr interpolationmode none
+attr recordingmode mean
+attr title "TxQueueLen, mean"
+scalar Net.rte2.app endToEndDelay:mean 331.05201964391
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived requests, mean"
+attr unit s
+par Net.rte2.routing typename "\"node.Routing\""
+par Net.rte2.queue[0] typename "\"node.L2Queue\""
+par Net.rte2.queue[0] frameCapacity 0
+par Net.rte2.queue[0] useCutThroughSwitching false
+par Net.rte2.queue[1] typename "\"node.L2Queue\""
+par Net.rte2.queue[1] frameCapacity 0
+par Net.rte2.queue[1] useCutThroughSwitching false
+par Net.rte2.queue[2] typename "\"node.L2Queue\""
+par Net.rte2.queue[2] frameCapacity 0
+par Net.rte2.queue[2] useCutThroughSwitching false
+par Net.rte2.queue[3] typename "\"node.L2Queue\""
+par Net.rte2.queue[3] frameCapacity 0
+par Net.rte2.queue[3] useCutThroughSwitching false
+par Net.rte2.queue[4] typename "\"node.L2Queue\""
+par Net.rte2.queue[4] frameCapacity 0
+par Net.rte2.queue[4] useCutThroughSwitching false
+par Net.rte2.queue[5] typename "\"node.L2Queue\""
+par Net.rte2.queue[5] frameCapacity 0
+par Net.rte2.queue[5] useCutThroughSwitching false
+par Net.rte2.queue[6] typename "\"node.L2Queue\""
+par Net.rte2.queue[6] frameCapacity 0
+par Net.rte2.queue[6] useCutThroughSwitching false
+par Net.rte2.queue[7] typename "\"node.L2Queue\""
+par Net.rte2.queue[7] frameCapacity 0
+par Net.rte2.queue[7] useCutThroughSwitching false
+par Net.rte2.queue[8] typename "\"node.L2Queue\""
+par Net.rte2.queue[8] frameCapacity 0
+par Net.rte2.queue[8] useCutThroughSwitching false
+par Net.rte2 typename "\"node.Node\""
+par Net.rte2 address 2
+par Net.rte2 appType "\"AppV\""
+par Net.rte3.app typename "\"node.AppV\""
+par Net.rte3.app address 3
+par Net.rte3.app batchSize 10
+par Net.rte3.app quorum 7
+par Net.rte3.app N 10
+par Net.rte3.app destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+par Net.rte3.app router "\"\""
+par Net.rte3.app sendIaTime exponential(47.61ms)
+attr unit s
+par Net.rte3.app packageLength 100byte
+attr unit byte
+par Net.rte3.app voteLength 5byte
+attr unit byte
+scalar Net.rte3.app Txcount:sum 5440
+attr interpolationmode none
+attr recordingmode sum
+attr title "Txcount, sum"
+scalar Net.rte3.app TxQueueLen:mean 5449.3875051041
+attr interpolationmode none
+attr recordingmode mean
+attr title "TxQueueLen, mean"
+scalar Net.rte3.app endToEndDelay:mean 336.9635644762
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived requests, mean"
+attr unit s
+par Net.rte3.routing typename "\"node.Routing\""
+par Net.rte3.queue[0] typename "\"node.L2Queue\""
+par Net.rte3.queue[0] frameCapacity 0
+par Net.rte3.queue[0] useCutThroughSwitching false
+par Net.rte3.queue[1] typename "\"node.L2Queue\""
+par Net.rte3.queue[1] frameCapacity 0
+par Net.rte3.queue[1] useCutThroughSwitching false
+par Net.rte3.queue[2] typename "\"node.L2Queue\""
+par Net.rte3.queue[2] frameCapacity 0
+par Net.rte3.queue[2] useCutThroughSwitching false
+par Net.rte3.queue[3] typename "\"node.L2Queue\""
+par Net.rte3.queue[3] frameCapacity 0
+par Net.rte3.queue[3] useCutThroughSwitching false
+par Net.rte3.queue[4] typename "\"node.L2Queue\""
+par Net.rte3.queue[4] frameCapacity 0
+par Net.rte3.queue[4] useCutThroughSwitching false
+par Net.rte3.queue[5] typename "\"node.L2Queue\""
+par Net.rte3.queue[5] frameCapacity 0
+par Net.rte3.queue[5] useCutThroughSwitching false
+par Net.rte3.queue[6] typename "\"node.L2Queue\""
+par Net.rte3.queue[6] frameCapacity 0
+par Net.rte3.queue[6] useCutThroughSwitching false
+par Net.rte3.queue[7] typename "\"node.L2Queue\""
+par Net.rte3.queue[7] frameCapacity 0
+par Net.rte3.queue[7] useCutThroughSwitching false
+par Net.rte3.queue[8] typename "\"node.L2Queue\""
+par Net.rte3.queue[8] frameCapacity 0
+par Net.rte3.queue[8] useCutThroughSwitching false
+par Net.rte3 typename "\"node.Node\""
+par Net.rte3 address 3
+par Net.rte3 appType "\"AppV\""
+par Net.rte4.app typename "\"node.AppV\""
+par Net.rte4.app address 4
+par Net.rte4.app batchSize 10
+par Net.rte4.app quorum 7
+par Net.rte4.app N 10
+par Net.rte4.app destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+par Net.rte4.app router "\"\""
+par Net.rte4.app sendIaTime exponential(47.61ms)
+attr unit s
+par Net.rte4.app packageLength 100byte
+attr unit byte
+par Net.rte4.app voteLength 5byte
+attr unit byte
+scalar Net.rte4.app Txcount:sum 5390
+attr interpolationmode none
+attr recordingmode sum
+attr title "Txcount, sum"
+scalar Net.rte4.app TxQueueLen:mean 5574.9371522769
+attr interpolationmode none
+attr recordingmode mean
+attr title "TxQueueLen, mean"
+scalar Net.rte4.app endToEndDelay:mean 343.61036564999
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived requests, mean"
+attr unit s
+par Net.rte4.routing typename "\"node.Routing\""
+par Net.rte4.queue[0] typename "\"node.L2Queue\""
+par Net.rte4.queue[0] frameCapacity 0
+par Net.rte4.queue[0] useCutThroughSwitching false
+par Net.rte4.queue[1] typename "\"node.L2Queue\""
+par Net.rte4.queue[1] frameCapacity 0
+par Net.rte4.queue[1] useCutThroughSwitching false
+par Net.rte4.queue[2] typename "\"node.L2Queue\""
+par Net.rte4.queue[2] frameCapacity 0
+par Net.rte4.queue[2] useCutThroughSwitching false
+par Net.rte4.queue[3] typename "\"node.L2Queue\""
+par Net.rte4.queue[3] frameCapacity 0
+par Net.rte4.queue[3] useCutThroughSwitching false
+par Net.rte4.queue[4] typename "\"node.L2Queue\""
+par Net.rte4.queue[4] frameCapacity 0
+par Net.rte4.queue[4] useCutThroughSwitching false
+par Net.rte4.queue[5] typename "\"node.L2Queue\""
+par Net.rte4.queue[5] frameCapacity 0
+par Net.rte4.queue[5] useCutThroughSwitching false
+par Net.rte4.queue[6] typename "\"node.L2Queue\""
+par Net.rte4.queue[6] frameCapacity 0
+par Net.rte4.queue[6] useCutThroughSwitching false
+par Net.rte4.queue[7] typename "\"node.L2Queue\""
+par Net.rte4.queue[7] frameCapacity 0
+par Net.rte4.queue[7] useCutThroughSwitching false
+par Net.rte4.queue[8] typename "\"node.L2Queue\""
+par Net.rte4.queue[8] frameCapacity 0
+par Net.rte4.queue[8] useCutThroughSwitching false
+par Net.rte4 typename "\"node.Node\""
+par Net.rte4 address 4
+par Net.rte4 appType "\"AppV\""
+par Net.rte5.app typename "\"node.AppV\""
+par Net.rte5.app address 5
+par Net.rte5.app batchSize 10
+par Net.rte5.app quorum 7
+par Net.rte5.app N 10
+par Net.rte5.app destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+par Net.rte5.app router "\"\""
+par Net.rte5.app sendIaTime exponential(47.61ms)
+attr unit s
+par Net.rte5.app packageLength 100byte
+attr unit byte
+par Net.rte5.app voteLength 5byte
+attr unit byte
+scalar Net.rte5.app Txcount:sum 5500
+attr interpolationmode none
+attr recordingmode sum
+attr title "Txcount, sum"
+scalar Net.rte5.app TxQueueLen:mean 5341.0963052695
+attr interpolationmode none
+attr recordingmode mean
+attr title "TxQueueLen, mean"
+scalar Net.rte5.app endToEndDelay:mean 333.78714514486
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived requests, mean"
+attr unit s
+par Net.rte5.routing typename "\"node.Routing\""
+par Net.rte5.queue[0] typename "\"node.L2Queue\""
+par Net.rte5.queue[0] frameCapacity 0
+par Net.rte5.queue[0] useCutThroughSwitching false
+par Net.rte5.queue[1] typename "\"node.L2Queue\""
+par Net.rte5.queue[1] frameCapacity 0
+par Net.rte5.queue[1] useCutThroughSwitching false
+par Net.rte5.queue[2] typename "\"node.L2Queue\""
+par Net.rte5.queue[2] frameCapacity 0
+par Net.rte5.queue[2] useCutThroughSwitching false
+par Net.rte5.queue[3] typename "\"node.L2Queue\""
+par Net.rte5.queue[3] frameCapacity 0
+par Net.rte5.queue[3] useCutThroughSwitching false
+par Net.rte5.queue[4] typename "\"node.L2Queue\""
+par Net.rte5.queue[4] frameCapacity 0
+par Net.rte5.queue[4] useCutThroughSwitching false
+par Net.rte5.queue[5] typename "\"node.L2Queue\""
+par Net.rte5.queue[5] frameCapacity 0
+par Net.rte5.queue[5] useCutThroughSwitching false
+par Net.rte5.queue[6] typename "\"node.L2Queue\""
+par Net.rte5.queue[6] frameCapacity 0
+par Net.rte5.queue[6] useCutThroughSwitching false
+par Net.rte5.queue[7] typename "\"node.L2Queue\""
+par Net.rte5.queue[7] frameCapacity 0
+par Net.rte5.queue[7] useCutThroughSwitching false
+par Net.rte5.queue[8] typename "\"node.L2Queue\""
+par Net.rte5.queue[8] frameCapacity 0
+par Net.rte5.queue[8] useCutThroughSwitching false
+par Net.rte5 typename "\"node.Node\""
+par Net.rte5 address 5
+par Net.rte5 appType "\"AppV\""
+par Net.rte6.app typename "\"node.AppV\""
+par Net.rte6.app address 6
+par Net.rte6.app batchSize 10
+par Net.rte6.app quorum 7
+par Net.rte6.app N 10
+par Net.rte6.app destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+par Net.rte6.app router "\"\""
+par Net.rte6.app sendIaTime exponential(47.61ms)
+attr unit s
+par Net.rte6.app packageLength 100byte
+attr unit byte
+par Net.rte6.app voteLength 5byte
+attr unit byte
+scalar Net.rte6.app Txcount:sum 5530
+attr interpolationmode none
+attr recordingmode sum
+attr title "Txcount, sum"
+scalar Net.rte6.app TxQueueLen:mean 5213.2764162314
+attr interpolationmode none
+attr recordingmode mean
+attr title "TxQueueLen, mean"
+scalar Net.rte6.app endToEndDelay:mean 327.66030397548
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived requests, mean"
+attr unit s
+par Net.rte6.routing typename "\"node.Routing\""
+par Net.rte6.queue[0] typename "\"node.L2Queue\""
+par Net.rte6.queue[0] frameCapacity 0
+par Net.rte6.queue[0] useCutThroughSwitching false
+par Net.rte6.queue[1] typename "\"node.L2Queue\""
+par Net.rte6.queue[1] frameCapacity 0
+par Net.rte6.queue[1] useCutThroughSwitching false
+par Net.rte6.queue[2] typename "\"node.L2Queue\""
+par Net.rte6.queue[2] frameCapacity 0
+par Net.rte6.queue[2] useCutThroughSwitching false
+par Net.rte6.queue[3] typename "\"node.L2Queue\""
+par Net.rte6.queue[3] frameCapacity 0
+par Net.rte6.queue[3] useCutThroughSwitching false
+par Net.rte6.queue[4] typename "\"node.L2Queue\""
+par Net.rte6.queue[4] frameCapacity 0
+par Net.rte6.queue[4] useCutThroughSwitching false
+par Net.rte6.queue[5] typename "\"node.L2Queue\""
+par Net.rte6.queue[5] frameCapacity 0
+par Net.rte6.queue[5] useCutThroughSwitching false
+par Net.rte6.queue[6] typename "\"node.L2Queue\""
+par Net.rte6.queue[6] frameCapacity 0
+par Net.rte6.queue[6] useCutThroughSwitching false
+par Net.rte6.queue[7] typename "\"node.L2Queue\""
+par Net.rte6.queue[7] frameCapacity 0
+par Net.rte6.queue[7] useCutThroughSwitching false
+par Net.rte6.queue[8] typename "\"node.L2Queue\""
+par Net.rte6.queue[8] frameCapacity 0
+par Net.rte6.queue[8] useCutThroughSwitching false
+par Net.rte6 typename "\"node.Node\""
+par Net.rte6 address 6
+par Net.rte6 appType "\"AppV\""
+par Net.rte7.app typename "\"node.AppV\""
+par Net.rte7.app address 7
+par Net.rte7.app batchSize 10
+par Net.rte7.app quorum 7
+par Net.rte7.app N 10
+par Net.rte7.app destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+par Net.rte7.app router "\"\""
+par Net.rte7.app sendIaTime exponential(47.61ms)
+attr unit s
+par Net.rte7.app packageLength 100byte
+attr unit byte
+par Net.rte7.app voteLength 5byte
+attr unit byte
+scalar Net.rte7.app Txcount:sum 5510
+attr interpolationmode none
+attr recordingmode sum
+attr title "Txcount, sum"
+scalar Net.rte7.app TxQueueLen:mean 5312.3446327684
+attr interpolationmode none
+attr recordingmode mean
+attr title "TxQueueLen, mean"
+scalar Net.rte7.app endToEndDelay:mean 330.95631781983
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived requests, mean"
+attr unit s
+par Net.rte7.routing typename "\"node.Routing\""
+par Net.rte7.queue[0] typename "\"node.L2Queue\""
+par Net.rte7.queue[0] frameCapacity 0
+par Net.rte7.queue[0] useCutThroughSwitching false
+par Net.rte7.queue[1] typename "\"node.L2Queue\""
+par Net.rte7.queue[1] frameCapacity 0
+par Net.rte7.queue[1] useCutThroughSwitching false
+par Net.rte7.queue[2] typename "\"node.L2Queue\""
+par Net.rte7.queue[2] frameCapacity 0
+par Net.rte7.queue[2] useCutThroughSwitching false
+par Net.rte7.queue[3] typename "\"node.L2Queue\""
+par Net.rte7.queue[3] frameCapacity 0
+par Net.rte7.queue[3] useCutThroughSwitching false
+par Net.rte7.queue[4] typename "\"node.L2Queue\""
+par Net.rte7.queue[4] frameCapacity 0
+par Net.rte7.queue[4] useCutThroughSwitching false
+par Net.rte7.queue[5] typename "\"node.L2Queue\""
+par Net.rte7.queue[5] frameCapacity 0
+par Net.rte7.queue[5] useCutThroughSwitching false
+par Net.rte7.queue[6] typename "\"node.L2Queue\""
+par Net.rte7.queue[6] frameCapacity 0
+par Net.rte7.queue[6] useCutThroughSwitching false
+par Net.rte7.queue[7] typename "\"node.L2Queue\""
+par Net.rte7.queue[7] frameCapacity 0
+par Net.rte7.queue[7] useCutThroughSwitching false
+par Net.rte7.queue[8] typename "\"node.L2Queue\""
+par Net.rte7.queue[8] frameCapacity 0
+par Net.rte7.queue[8] useCutThroughSwitching false
+par Net.rte7 typename "\"node.Node\""
+par Net.rte7 address 7
+par Net.rte7 appType "\"AppV\""
+par Net.rte8.app typename "\"node.AppV\""
+par Net.rte8.app address 8
+par Net.rte8.app batchSize 10
+par Net.rte8.app quorum 7
+par Net.rte8.app N 10
+par Net.rte8.app destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+par Net.rte8.app router "\"\""
+par Net.rte8.app sendIaTime exponential(47.61ms)
+attr unit s
+par Net.rte8.app packageLength 100byte
+attr unit byte
+par Net.rte8.app voteLength 5byte
+attr unit byte
+scalar Net.rte8.app Txcount:sum 5480
+attr interpolationmode none
+attr recordingmode sum
+attr title "Txcount, sum"
+scalar Net.rte8.app TxQueueLen:mean 5407.0200689236
+attr interpolationmode none
+attr recordingmode mean
+attr title "TxQueueLen, mean"
+scalar Net.rte8.app endToEndDelay:mean 332.23511434704
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived requests, mean"
+attr unit s
+par Net.rte8.routing typename "\"node.Routing\""
+par Net.rte8.queue[0] typename "\"node.L2Queue\""
+par Net.rte8.queue[0] frameCapacity 0
+par Net.rte8.queue[0] useCutThroughSwitching false
+par Net.rte8.queue[1] typename "\"node.L2Queue\""
+par Net.rte8.queue[1] frameCapacity 0
+par Net.rte8.queue[1] useCutThroughSwitching false
+par Net.rte8.queue[2] typename "\"node.L2Queue\""
+par Net.rte8.queue[2] frameCapacity 0
+par Net.rte8.queue[2] useCutThroughSwitching false
+par Net.rte8.queue[3] typename "\"node.L2Queue\""
+par Net.rte8.queue[3] frameCapacity 0
+par Net.rte8.queue[3] useCutThroughSwitching false
+par Net.rte8.queue[4] typename "\"node.L2Queue\""
+par Net.rte8.queue[4] frameCapacity 0
+par Net.rte8.queue[4] useCutThroughSwitching false
+par Net.rte8.queue[5] typename "\"node.L2Queue\""
+par Net.rte8.queue[5] frameCapacity 0
+par Net.rte8.queue[5] useCutThroughSwitching false
+par Net.rte8.queue[6] typename "\"node.L2Queue\""
+par Net.rte8.queue[6] frameCapacity 0
+par Net.rte8.queue[6] useCutThroughSwitching false
+par Net.rte8.queue[7] typename "\"node.L2Queue\""
+par Net.rte8.queue[7] frameCapacity 0
+par Net.rte8.queue[7] useCutThroughSwitching false
+par Net.rte8.queue[8] typename "\"node.L2Queue\""
+par Net.rte8.queue[8] frameCapacity 0
+par Net.rte8.queue[8] useCutThroughSwitching false
+par Net.rte8 typename "\"node.Node\""
+par Net.rte8 address 8
+par Net.rte8 appType "\"AppV\""
+par Net.rte9.app typename "\"node.AppV\""
+par Net.rte9.app address 9
+par Net.rte9.app batchSize 10
+par Net.rte9.app quorum 7
+par Net.rte9.app N 10
+par Net.rte9.app destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+par Net.rte9.app router "\"\""
+par Net.rte9.app sendIaTime exponential(47.61ms)
+attr unit s
+par Net.rte9.app packageLength 100byte
+attr unit byte
+par Net.rte9.app voteLength 5byte
+attr unit byte
+scalar Net.rte9.app Txcount:sum 5450
+attr interpolationmode none
+attr recordingmode sum
+attr title "Txcount, sum"
+scalar Net.rte9.app TxQueueLen:mean 5407.5601304525
+attr interpolationmode none
+attr recordingmode mean
+attr title "TxQueueLen, mean"
+scalar Net.rte9.app endToEndDelay:mean 335.62288938965
+attr interpolationmode none
+attr recordingmode mean
+attr title "end-to-end delay of arrived requests, mean"
+attr unit s
+par Net.rte9.routing typename "\"node.Routing\""
+par Net.rte9.queue[0] typename "\"node.L2Queue\""
+par Net.rte9.queue[0] frameCapacity 0
+par Net.rte9.queue[0] useCutThroughSwitching false
+par Net.rte9.queue[1] typename "\"node.L2Queue\""
+par Net.rte9.queue[1] frameCapacity 0
+par Net.rte9.queue[1] useCutThroughSwitching false
+par Net.rte9.queue[2] typename "\"node.L2Queue\""
+par Net.rte9.queue[2] frameCapacity 0
+par Net.rte9.queue[2] useCutThroughSwitching false
+par Net.rte9.queue[3] typename "\"node.L2Queue\""
+par Net.rte9.queue[3] frameCapacity 0
+par Net.rte9.queue[3] useCutThroughSwitching false
+par Net.rte9.queue[4] typename "\"node.L2Queue\""
+par Net.rte9.queue[4] frameCapacity 0
+par Net.rte9.queue[4] useCutThroughSwitching false
+par Net.rte9.queue[5] typename "\"node.L2Queue\""
+par Net.rte9.queue[5] frameCapacity 0
+par Net.rte9.queue[5] useCutThroughSwitching false
+par Net.rte9.queue[6] typename "\"node.L2Queue\""
+par Net.rte9.queue[6] frameCapacity 0
+par Net.rte9.queue[6] useCutThroughSwitching false
+par Net.rte9.queue[7] typename "\"node.L2Queue\""
+par Net.rte9.queue[7] frameCapacity 0
+par Net.rte9.queue[7] useCutThroughSwitching false
+par Net.rte9.queue[8] typename "\"node.L2Queue\""
+par Net.rte9.queue[8] frameCapacity 0
+par Net.rte9.queue[8] useCutThroughSwitching false
+par Net.rte9 typename "\"node.Node\""
+par Net.rte9 address 9
+par Net.rte9 appType "\"AppV\""
+par Net typename "\"networks.Net\""
+
