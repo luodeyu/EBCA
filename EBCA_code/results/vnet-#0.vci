@@ -1,0 +1,147 @@
+file 3941153 1693535716                                         
+version 3
+run vnet-0-20230901-10:35:15-13463
+attr configname vnet
+attr datetime 20230901-10:35:15
+attr datetimef 20230901-103515
+attr experiment vnet
+attr inifile omnetpp-10.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network networks.Net
+attr processid 13463
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config cmdenv-redirect-output true
+config **.appType "\"AppV\""
+config network networks.Net
+config **.address "int(replace(fullName(), \"rte\", \"\"))"
+config **.app.sendIaTime "exponential(47.61 ms)"
+config **.app.packageLength "100 bytes"
+config **.app.voteLength "5 bytes"
+config **.app.batchSize 10
+config **.nodesFile "\"networks/nodes-10.txt\""
+config **.connectionsFile "\"networks/connections-10.txt\""
+config **.app.quorum 7
+config **.app.N 10
+config **.destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+config **.router "\"\""
+config sim-time-limit 1000s
+config repeat 1
+
+vector 0 Net.rte4.app TxQueueLen:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title TxQueueLen
+vector 1 Net.rte4.app endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "end-to-end delay of arrived requests"
+attr unit s
+vector 2 Net.rte8.app TxQueueLen:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title TxQueueLen
+vector 3 Net.rte0.app TxQueueLen:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title TxQueueLen
+vector 4 Net.rte3.app TxQueueLen:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title TxQueueLen
+vector 5 Net.rte2.app TxQueueLen:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title TxQueueLen
+vector 6 Net.rte8.app endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "end-to-end delay of arrived requests"
+attr unit s
+vector 7 Net.rte6.app TxQueueLen:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title TxQueueLen
+vector 8 Net.rte5.app TxQueueLen:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title TxQueueLen
+vector 9 Net.rte2.app endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "end-to-end delay of arrived requests"
+attr unit s
+vector 10 Net.rte0.app endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "end-to-end delay of arrived requests"
+attr unit s
+vector 11 Net.rte6.app endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "end-to-end delay of arrived requests"
+attr unit s
+vector 12 Net.rte3.app endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "end-to-end delay of arrived requests"
+attr unit s
+vector 13 Net.rte1.app TxQueueLen:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title TxQueueLen
+vector 14 Net.rte9.app TxQueueLen:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title TxQueueLen
+vector 15 Net.rte5.app endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "end-to-end delay of arrived requests"
+attr unit s
+vector 16 Net.rte7.app TxQueueLen:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title TxQueueLen
+vector 17 Net.rte9.app endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "end-to-end delay of arrived requests"
+attr unit s
+vector 18 Net.rte7.app endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "end-to-end delay of arrived requests"
+attr unit s
+vector 19 Net.rte1.app endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "end-to-end delay of arrived requests"
+attr unit s
+0	3818 152531 1950 3569882 1.262256528616 999.98470953342 4853 10 10810 27055170 197923974900
+1	156349 228028 3155 3565357 1.823755508376 998.664594913349 5390 1.52303757594 675.66129435825 1852059.8708535 842860253.19757
+2	384377 155188 4751 3569442 2.179619416001 999.839560915755 4933 30 10760 26672830 192246799300
+3	539565 157366 6036 3569800 2.783634266371 999.95870863341 5005 40 10350 26419450 184205341500
+4	696931 154195 6245 3569218 2.815295604594 999.783704508322 4898 50 10770 26691100 191894594200
+5	851126 157989 6457 3569725 2.861699839755 999.924708033384 5026 30 10310 26183820 179535264200
+6	1009115 232213 6566 3565421 2.87229702963 998.678192178236 5480 2.36905872647 660.14716422662 1820648.4266218 805060140.86541
+7	1241328 156201 6597 3568696 2.875297104632 999.620555440599 4978 30 10360 25951690 179859146900
+8	1397529 155501 7192 3568289 3.022640491529 999.490212728728 4953 40 10600 26454450 186958988900
+9	1553030 236393 7907 3564446 3.388353402425 998.437388217264 5580 2.910776287484 647.70205515801 1847270.269613 804586627.33293
+10	1789423 241035 8135 3567188 3.449796159394 999.182674685386 5560 2.992356942064 656.30119811499 1851590.8424475 818587305.84032
+11	2030458 239687 8662 3566921 3.566653841861 999.120844478152 5530 2.929931686958 649.27487310626 1811961.4809844 788481620.61641
+12	2270145 235928 9071 3565037 3.636852567483 998.594871137301 5440 3.261147807505 665.45783279646 1833081.7907505 816188804.27781
+13	2506073 161692 9185 3569372 3.654316830126 999.822705483304 4994 40 10370 26202330 181467497100
+14	2667765 159254 9206 3569806 3.657719490247 999.961627089141 4906 40 10700 26529490 189455795900
+15	2827019 238201 9501 3565695 3.714318330164 998.748678632656 5500 3.154675791843 654.48036225985 1835829.2982967 807613782.86362
+16	3065220 160599 10036 3569533 3.808660142021 999.88042429316 4956 50 10580 26327980 185816332000
+17	3225819 236366 12260 3565259 4.504337830652 998.648234900669 5450 3.413600397728 661.61418075164 1829144.7471736 810353444.68384
+18	3462185 238696 12593 3569533 4.592679492505 999.88042429316 5510 3.501942059581 657.09414497126 1823569.3111872 799309215.06503
+19	3700881 240271 13713 3568437 5.018835385376 999.532415592928 5550 3.751238769947 652.0741642107 1833695.9676845 799037279.66647
+

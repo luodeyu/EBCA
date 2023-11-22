@@ -1,0 +1,49 @@
+file 65214 1693535716                                           
+version 3
+run oldnet-0-20230901-10:35:16-13481
+attr configname oldnet
+attr datetime 20230901-10:35:16
+attr datetimef 20230901-103516
+attr experiment oldnet
+attr inifile omnetpp-10.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network networks.Net
+attr processid 13481
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config cmdenv-redirect-output true
+config **.leader 0
+config **.appType "\"AppOld\""
+config network networks.Net
+config **.address "int(replace(fullName(), \"rte\", \"\"))"
+config **.app.sendIaTime "exponential(47.61 ms)"
+config **.app.packageLength "100 bytes"
+config **.app.voteLength "5 bytes"
+config **.app.batchSize 10
+config **.nodesFile "\"networks/nodes-10.txt\""
+config **.connectionsFile "\"networks/connections-10.txt\""
+config **.app.quorum 7
+config **.app.N 10
+config **.destAddresses "\"0 1 2 3 4 5 6 7 8 9\""
+config **.router "\"\""
+config sim-time-limit 1000s
+config repeat 1
+
+vector 0 Net.rte0.app TxQueueLen:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title TxQueueLen
+vector 1 Net.rte0.app endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "end-to-end delay of arrived requests"
+attr unit s
+0	1288 26289 24291 2701540 9.332822967993 997.734231198263 805 1360 148160 60167110 5958319812700
+1	27577 37636 27087 2676314 10.412548147849 988.638003792501 890 10.245722489101 985.05083982962 444569.6238757 294016823.3591
+
